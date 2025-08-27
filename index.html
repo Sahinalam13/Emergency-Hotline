@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body>
@@ -32,17 +33,47 @@
                 <button class="flex justify-center items-center bg-[#00A63E] p-3 gap-1 rounded-[50px] w-[123px] text-white">0 <span>Copy</span></button>
             </div>
         </nav>
-        
-    </header>
-    <!-- main start -->
-    <main>
-        <!-- banner section -->
-        <section class="px-[60px] max-w-[1920px] min-h-[240px] mx-auto bg-[linear-gradient(90deg,rgba(1,49,34,1),rgba(0,103,71,1)_50%,rgba(1,50,35,1)_100%)] flex flex-col justify-center items-center gap-3">
+        <!-- hero section -->
+        <section class="px-[60px] max-w-[1920px] min-h-[240px] mx-auto bg-gradient-to-r from-[#013122] via-[#025c40] to-[#013122] flex flex-col justify-center items-center gap-3">
             <img src="./assets/logo-dark.png" class="w-[92px] h-[92px]" alt="">
             <h1 class="text-white text-[40px] font-bold">Emergency Service Directory</h1>
             <p class="text-white text-[20px] font-semibold">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
 
         </section>
+        
+    </header>
+    <!-- main start -->
+    <main class="bg-[#F5FFF6]">
+        <section id="card-container" class=" w-11/12 mx-auto py-12 grid grid-cols-12 gap-8">
+            <div id="card-box-parent" class=" col-span-9 ">
+                <div class="card-box grid grid-cols-3 gap-[30px]  ">
+                    <!-- card-1 -->
+                    <div class="card bg-white p-8 shadow-md rounded-xl">
+                    <div class="flex justify-between mb-4">
+                        <div class="rounded-lg bg-[#FFE3E2] p-2"><img src="./assets/emergency.png" class="w-8 h-8 mx-auto" alt=""></div>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="mb-6">
+                        <h2 class="text-[18px] font-bold text-[#111111]">National Emergency Number</h2>
+                        <p class="text-[#5C5C5C]">National Emergency</p>
+                    </div>
+                    <div class="mb-6">
+                        <span class="text-[#111111] font-bold">999</span>
+                        <p class="rounded-3xl bg-[#F2F2F2] text-[#5C5C5C] w-[50px] h-[30px] text-center">All </p>
+                    </div>
+                    <div class="flex justify-between items-center gap-2 h-10  ">
+                        <button class="w-[180px] p-2 bg-white rounded-lg text-[#5C5C5C] border-1 border-[#5C5C5C]"><i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="w-[180px] p-2 bg-[#00A63E] rounded-lg text-white"><i class="fa-solid fa-phone"></i> Call</button>
+                    </div>   
+                 </div>
+                </div>  
+            </div>
+            <aside id="call-history" class="bg-yellow-200 col-span-3">
+                <h1>call</h1>
+
+            </aside>
+        </section>
+        
     
 
     </main>
