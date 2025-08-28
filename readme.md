@@ -36,7 +36,29 @@ It's happens when an elements receievs an event and that event bubbles up to its
 Event bubbling work as---Event Trigger,,Target Element,Bubling Up,Root Reached and Event Delegation also
 
 4. What is **Event Delegation** in JavaScript? Why is it useful? = Event Delegation is a technique where a single event listener is attached to a parent element to manage event for multiples child elements..
-Instead of attaching
+Instead of attaching individual event listeners to each child  element a single listener is placed on a common ancestor.
+Using properties like {event.target}, determines which specific child element initiated the event and handles it acordingly.
+      It is usefull for 
+      Improved performance and memory efficiency.
+      Handling dynamically added content
+      Simplified code and easier maintenance
+      most helpful one is Reduce  DOM manipulations
+
+
+5. What is the difference between **preventDefault() and stopPropagation()** methods?
+
+ **preventDefault()** =
+ This method prevents the default action associated with a specific event from accurring
+ It work such as
+ Preventing a form that submitting when a submit button is clicked
+ Disabling  the default behavior of a checkbox when clicked
+
+ **stopPropagation()****
+ Usualy it used when we want to control the flow of the event through the DOM preventing it from reaching other elements in the hierarchy.
+
+
+ on the otherside preventDefault() is when we want to stop the browser's default action for an event {form submition,link navigation }
+that is the difference between preventDefault() and stopPropagation()**
 
 
 
