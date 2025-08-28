@@ -10,41 +10,41 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
-<body>
+<body class="max-w-[1920px] mx-auto">
     <header class="">
-        <nav class="px-[60px] py-6 lg:max-w-[1920px] h-[100px] mx-auto flex  justify-between bg-white">
+        <nav class="px-3 md:px-[60px] py-6 min-h-[100px] mx-auto flex  justify-between gap-1 md:gap-3 bg-white">
             <!-- left side -->
-            <div class="flex items-center gap-3">
+            <div class="flex items-center gap-1 md:gap-3">
                 <figure>
-                    <img src="./assets/logo.png" class="w-12 h-12" alt="">
+                    <img src="./assets/logo.png" class="w-10 md:w-12 h-10 md:h-12" alt="">
                 </figure>
-                <h2 class="font-extrabold text-[#006747]">Emergency <br> Service</h2>
+                <h2 class="font-bold md:font-extrabold text-[#006747]">Emergency <br> Service</h2>
             </div>
             <!-- right side -->
-            <div class="flex justify-between items-center gap-[20px]">
-                <div class="flex justify-center items-center bg-[#41ff6b1a] p-3 gap-1 rounded-[50px] w-[123px]  ">
+            <div class="flex justify-between items-center gap-3 md:gap-[20px] max-w-[397px]">
+                <div class="flex justify-center items-center bg-[#41ff6b1a] p-3 gap-1 rounded-[50px] md:w-[123px]  ">
                     <span id="heart-count"  class="font-bold text-[#111111]">0</span>
                     <img src="./assets/heart.png" class="w-6 h-6" alt="">
                 </div>
-                <div class="flex justify-center items-center bg-[#41ff6b1a] p-3 gap-1 rounded-[50px] w-[123px]">
+                <div class="flex justify-center items-center bg-[#41ff6b1a] p-3 gap-1 rounded-[50px] md:w-[123px]">
                    <span id="coins-count"  class="font-bold text-[#111111]">100</span>
                     <img src="./assets/coin.png"  class="w-6 h-6" alt="">
                 </div>
-                <button class="flex justify-center items-center bg-[#00A63E] p-3 gap-1 rounded-[50px] w-[123px] copy-btn text-white"><span id="copy-count">0</span>Copy</button>
+                <button class="flex justify-center items-center bg-[#00A63E] p-3 gap-1 rounded-[50px] md:w-[123px] copy-btn text-white"><span id="copy-count">0</span>Copy</button>
             </div>
         </nav>
         <!-- hero section -->
-        <section class="px-[60px]  lg:max-w-[1920px] lg:min-h-[240px] mx-auto bg-gradient-to-r from-[#013122] via-[#025c40] to-[#013122] flex flex-col justify-center items-center gap-3">
+        <section class="px-5 py-3 md:px-[60px]  md:min-h-[240px] mx-auto bg-gradient-to-r from-[#013122] via-[#025c40] to-[#013122] flex flex-col justify-center items-center gap-1 md:gap-3">
             <img src="./assets/logo-dark.png" class="w-[92px] h-[92px]" alt="">
-            <h1 class="text-white text-[40px] font-bold">Emergency Service Directory</h1>
-            <p class="text-white text-[20px] font-semibold">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+            <h1 class="text-white text-3 md:text-[40px] font-bold">Emergency Service Directory</h1>
+            <p class="text-white md:text-[20px] text-center md:font-semibold">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
         </section>
         
     </header>
     <!-- main start -->
-    <main class="bg-[#F5FFF6]">
-        <section id="card-container" class=" w-11/12 mx-auto py-12 grid lg:grid-cols-12 gap-8">
-            <div id="card-box-parent" class=" col-span-9 ">
+    <main class="bg-[#F5FFF6] ">
+        <section id="card-container" class=" md:w-11/12 mx-auto py-12 grid lg:grid-cols-12 gap-8">
+            <div id="card-box-parent" class=" col-span-1 md:col-span-9 ">
                 <div class="card-box grid lg:grid-cols-3 gap-[30px]  ">
                     <!-- card-1 -->
                     <div class="card bg-white p-8 shadow-xl rounded-xl">
@@ -61,7 +61,7 @@
                         <p class="rounded-3xl bg-[#F2F2F2] text-[#5C5C5C] w-[52px] h-[30px] text-center p-1">All </p>
                     </div>
                     <div class="flex justify-between items-center gap-2 h-10  ">
-                        <button class="w-[180px] p-2 bg-white rounded-lg text-[#5C5C5C] border-1 border-[#5C5C5C] copy-btn"><i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="w-[180px] p-2 bg-white rounded-lg text-[#5C5C5C] border-1  border-[#5C5C5C] copy-btn"><i class="fa-regular fa-copy"></i> Copy</button>
                         <button class="w-[180px] p-2 bg-[#00A63E] rounded-lg text-white call-btn" ><i class="fa-solid fa-phone "></i> Call</button>
                     </div>   
                  </div>
@@ -219,7 +219,7 @@
                  </div>
                 </div>  
             </div>
-            <aside id="call-history" class="bg-white col-span-3 p-6 shadow-xl rounded-xl">
+            <aside id="call-history" class="bg-white col-span-1 md:col-span-3 p-6 shadow-xl rounded-xl">
                 <div class="flex justify-between items-center mb-4 ">
                     <h1 class="font-medium text-[20px] text-[#111111] flex justify-center items-center gap-1"><i class="fa-regular fa-clock text-[#5C5C5C]"></i>Call History</h1>
                     <button id="clear-btn" class="bg-[#00A63E] text-white font-semibold rounded-[50px] px-9 py-3">Clear</button>
